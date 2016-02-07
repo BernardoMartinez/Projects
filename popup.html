@@ -1,10 +1,85 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:5px;
+}
+</style>
 <head>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='style.css' rel='stylesheet' type='text/css'>
+
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>AndrewsUniversity</title>
+
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="feed.js"></script>
+
+	<base target="_blank">
 </head>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+Button
+</button>
+
+
 <body bgcolor="#FFF">
-  <div id = "body">
-    <h2>hello</h2>
-  </div>
+	<table class="body-wrap">
+		<tr>
+			<td class="container">
+				<div class="content">
+					<div id="pattern" class="pattern">
+						<form action="https://www.google.com/search" method="get" class="f" target="_blank">
+							<input type="search" name="query" placeholder="Search Videos.." />
+							<input type="submit" class="btn search-submit" value="Search">
+						</form>
+					</div>
+					<div id="list">
+						<h4>Andrews University<h4>
+					</div>
+					<div id="nav">
+								<a href="https://www.andrews.edu/admsvs/timeclocks">TimeClock</a><br>
+								<a href="https://www.andrews.edu/services/dining/menus/index.html">Cafe Menu</a><br>
+								<a href="https://vault.andrews.edu/vault/goto/home">Vault Acess</a><br>
+								<a href="https://cas.andrews.edu/authenticationendpoint/login.do?commonAuthCallerPath=%252Fcas%252Flogin&forceAuth=true&passiveAuth=false&relyingParty=PROD+TouchNet+Login&tenantDomain=carbon.super&type=cassso&sessionDataKey=4b65649e-74a3-401f-988d-4d12f5a193ee&relyingParty=PROD%20TouchNet%20Login&type=cassso&sp=default&isSaaSApp=true&authenticators=BasicAuthenticator:LOCAL">Electroic payments</a><br>
+					</div>
+					<div id="nav">
+								<a href="https://www.andrews.edu/admsvs/StuWeb/ugchoices/">Chapel</a>
+								<a href="		https://vault.andrews.edu/vault/app/pages/secure/dara/edit_overnight_leave_request?reset=y">Overnight Leave Dorms</a>
+								<a href="https://vault.andrews.edu/vault/pages/activation/information.jsp">User Activation</a>
+					</div>
+					<div id="feed"></div>
+					<div id="logo">
+						<a href="http://www.youtube.com/gigafide"><img src="car.png" /></a>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
 </body>
 </html>
