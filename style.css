@@ -47,6 +47,7 @@ input[type=search] {
   width: 320px;
   height: 40px;
   margin-left:20px;
+  font-size: 12px;
   float:left;
   top: 0;
   padding: .7em 4em .7em .7em
@@ -55,29 +56,39 @@ input[type=search] {
 /* Placeholder text */
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:#be9549;
+	font-size:12px;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:#be9549;
+   font-size:12px;
    opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:#be9549;
+   font-size:12px;
    opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:#be9549;
+   font-size:12px;
 }
 :placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
   color:#be9549;
+  font-size:12px;
 }
 
 input[type=submit] {
   width: 40px;
   height: 40px;
-  background:#00406f;
+  background:#00406f url(magnifier.png) center no-repeat;
   cursor: pointer;
   padding: 0
 }
+
+input[type=submit]:hover{
+	background:#be9549 url(magnifier.png) center no-repeat;
+	}
+
 h2 {
 	color: be9549;
 }
