@@ -1,11 +1,34 @@
+@font-face {
+	font-family: "AU Akkurat";
+	src: url(font/AU_Akkurat.otf);
+}
+
 * {
-  font-family: "Times New Roman", Times, serif;
   margin: 0;
   padding: 0
 }
+
+header {
+	background:#002a48;
+	height: 115px;
+	margin: 0 auto;
+}
+
+.AUlogo {
+	height:65px;
+	background: #002a48 url(auLogo.png) center no-repeat;
+}
+
 img {
   max-width: 100%
 }
+
+.container {
+	width: 400px;
+  	height: 315px;
+	margin: 0 auto;
+	}
+
 .collapse {
   margin: 0!important;
   padding: 0
@@ -13,113 +36,50 @@ img {
 body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
-  width: 250px;
-  height: 100%
+  font-family: "AU Akkurat", sans-serif;
 }
-.f {
-  position: relative
-}
+
 input {
   display: block;
-  border: 1px solid #000
+  border: none;
 }
 input[type=search] {
-  width: 100%;
-  position: relative;
+  width: 320px;
+  height: 40px;
+  margin-left:20px;
+  float:left;
   top: 0;
   padding: .7em 4em .7em .7em
 }
+
+/* Placeholder text */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#be9549;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:#be9549;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:#be9549;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:#be9549;
+}
+:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color:#be9549;
+}
+
 input[type=submit] {
-  position: absolute;
-  right: .75em;
-  top: .5em;
-  bottom: .5em;
-  z-index: 1;
-  width: 4em;
+  width: 40px;
+  height: 40px;
+  background:#00406f;
   cursor: pointer;
-  background-color: #000;
   padding: 0
 }
-#logo {
-  width: 200px;
-  margin: 2em auto 0
-}
-a {
-  color: #2BA6CB
-}
-.btn {
-  text-decoration: none;
-  color: #FFF;
-  background-color: #666;
-  text-align: center;
-  cursor: pointer;
-  display: inline-block;
-  padding: 5px
-}
-p.callout {
-  background-color: #000;
-  margin-bottom: 15px;
-  color: #FFF;
-  width: 120px;
-  text-transform: uppercase;
-  padding: 10px
-}
-.callout a {
-  color: #FFF;
-  text-decoration: none;
-  font-size: 80%
-}
-.header.container table td.label {
-  padding: 15px 15px 15px 0
-}
-table.footer-wrap {
-  width: 100%;
-  clear: both!important
-}
-.footer-wrap .container td.content p {
-  border-top: 1px solid #d7d7d7;
-  padding-top: 15px;
-  font-size: 10px;
-  font-weight: 700
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family:"Times New Roman", Times;
-  line-height: 1.1;
-  margin-bottom: 15px;
-  color: #000
-}
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-size: 60%;
-  color: #6f6f6f;
-  line-height: 0;
-  text-transform: none
-}
-h1 {
-  font-weight: 200;
-  font-size: 44px
-}
 h2 {
-  font-weight: 200;
-  font-size: 37px
-}
-h3 {
-  font-weight: 500;
-  font-size: 27px
-}
-h4 {
-  font-style: italic;
-  text-align: center;
-  font-weight: 500;
-  font-size: 23px
-}
-h5 {
-  font-style: italic;
-  font-weight: 400;
-  line-height: 16px;
-  font-size: 14px
-}
-h5 a {
-  text-decoration: none
+	color: be9549;
 }
 form {
   margin: 0 0 1em
@@ -127,9 +87,8 @@ form {
 p, ul {
   margin-bottom: 10px;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #777
+  font-size: 14px;
+  line-height: 1.5;
 }
 p.lead {
   font-size: 17px
@@ -141,61 +100,72 @@ ul li {
   margin-left: 5px;
   list-style-position: inside
 }
-.container {
-  display: block!important;
-  max-width: 100%!important;
-  clear: both!important;
-  margin: 0 auto!important
-}
+
 .content {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  padding: 10px
-}
-.column {
-  width: 300px;
-  float: left
-}
-.column-wrap {
-  max-width: 600px!important;
-  margin: 0 auto;
-  padding: 0!important
-}
-.social .column {
-  width: 280px;
-  min-width: 279px;
-  float: left
+	max-width:400px;
+	display: block;
+	margin: 0 auto;
+	clear: both!important;
+	padding: 0;
 }
 .clear {
   display: block;
   clear: both
 }
-table.head-wrap, table.body-wrap, .content table, .column table {
-  width: 100%
-}
-.header.container table td.logo, .column tr td {
-  padding: 15px
-}
-#header {
-    background-color:black;
-    color:white;
-    text-align:center;
-    padding:5px;
-}
-#nav {
+
+.nav {
     line-height:30px;
-    background-color:#d9dde7;
-    height:300px;
-    width:100px;
+    background-color:#eee;
+    height:170px;
+    width:170px;
     float:left;
-    padding:5px;
+    padding:15px;
+	color: #43403f;
+	font-size:14px;
 }
-#section {
-    width:350px;
-    float:left;
-    padding:10px;
+
+.nav ul li, .nav2 ul li {
+	list-style-type: none;
+	text-indent: 10px;
+	}
+
+.nav li a, a:visited {
+	color: #43403f;
+	text-decoration:none;
 }
+	.nav li a:hover {
+		text-decoration:underline;
+	}
+
+.nav2 li a, a:visited {
+	color: #fff;
+	text-decoration:none;
+}
+	.nav li a:hover {
+		text-decoration:underline;
+	}
+
+.nav h2, .nav2 h2 {
+	font-family: Georgia, serif;
+	font-weight:500;
+	font-size:24px; 
+	margin-bottom:5px;
+}
+
+.nav2 h2 {
+	color:#be9549;
+}
+
+.nav2 {
+    line-height:30px;
+    background-color:#404f59;
+    height:170px;
+    width:170px;
+    float:right;
+    padding:15px;
+	font-size:14px;
+}
+
 #footer {
     background-color:black;
     color:white;
