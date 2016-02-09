@@ -1,6 +1,6 @@
 {
-	"name": "testandrews",
-	"version": "0.1",
+	"name": "Andrews University",
+	"version": "0.4",
 	"manifest_version": 2,
 	"description": "Andrews University QuicklLinks",
 	"browser_action": {
